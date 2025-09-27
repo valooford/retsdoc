@@ -1,0 +1,8 @@
+{
+  "targetDefaults": {
+    "build": {
+      "cache": true,
+      "outputs": ["{projectRoot}/dist/**/*"]
+    }
+  }
+}
