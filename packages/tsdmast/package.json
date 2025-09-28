@@ -3,7 +3,17 @@
   "version": "0.0.0",
   "description": "",
   "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
   "scripts": {
+    "dev": "tsdown --watch",
+    "build": "tsdown",
     "lint": "eslint . --cache",
     "format": "prettier . --write"
   },
@@ -20,12 +30,16 @@
     "@eslint/json": "catalog:",
     "@eslint/markdown": "catalog:",
     "@ianvs/prettier-plugin-sort-imports": "catalog:",
+    "@microsoft/api-extractor-model": "catalog:",
+    "@microsoft/tsdoc": "catalog:",
+    "@types/unist": "^3.0.3",
     "eslint": "catalog:",
     "eslint-config-prettier": "catalog:",
     "eslint-import-resolver-typescript": "catalog:",
     "eslint-plugin-import": "catalog:",
     "globals": "catalog:",
     "prettier": "catalog:",
+    "tsdown": "catalog:",
     "typescript-eslint": "catalog:"
   },
   "keywords": [
