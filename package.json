@@ -3,6 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "lint": "pnpm lint:root && lerna run lint --stream",
+    "lint:root": "eslint . --cache",
     "format:root": "prettier . !packages --write",
     "git-cz": "cz",
     "prepare": "husky"
@@ -11,14 +13,23 @@
     "@commitlint/cli": "^20.0.0",
     "@commitlint/config-conventional": "^20.0.0",
     "@commitlint/types": "^20.0.0",
+    "@eslint/js": "catalog:",
+    "@eslint/json": "catalog:",
+    "@eslint/markdown": "catalog:",
     "@ianvs/prettier-plugin-sort-imports": "catalog:",
     "@types/node": "^24.5.2",
     "commitizen": "^4.3.1",
     "cz-conventional-changelog": "^3.3.0",
+    "eslint": "catalog:",
+    "eslint-config-prettier": "catalog:",
+    "eslint-import-resolver-typescript": "catalog:",
+    "eslint-plugin-import": "catalog:",
+    "globals": "catalog:",
     "husky": "^9.1.7",
     "lerna": "^9.0.0",
     "lint-staged": "^16.2.1",
-    "prettier": "catalog:"
+    "prettier": "catalog:",
+    "typescript-eslint": "catalog:"
   },
   "config": {
     "commitizen": {

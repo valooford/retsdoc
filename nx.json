@@ -1,8 +1,8 @@
 {
   "targetDefaults": {
-    "build": {
+    "lint": {
       "cache": true,
-      "outputs": ["{projectRoot}/dist/**/*"]
+      "outputs": ["{projectRoot}/.eslintcache"]
     }
   }
 }

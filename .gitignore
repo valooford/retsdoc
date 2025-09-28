@@ -3,5 +3,6 @@ node_modules
 !/.husky/
 !/.vscode/extensions.json
 !/.vscode/_*.jsonc
+.eslintcache
 *.md
 !README.md

@@ -4,6 +4,7 @@
   "description": "",
   "type": "module",
   "scripts": {
+    "lint": "eslint . --cache",
     "format": "prettier . --write"
   },
   "author": "valooford",
@@ -15,8 +16,17 @@
   "funding": "https://github.com/valooford/valooford#support",
   "homepage": "https://github.com/valooford/retsdoc/tree/main/packages/tsdmast#readme",
   "devDependencies": {
+    "@eslint/js": "catalog:",
+    "@eslint/json": "catalog:",
+    "@eslint/markdown": "catalog:",
     "@ianvs/prettier-plugin-sort-imports": "catalog:",
-    "prettier": "catalog:"
+    "eslint": "catalog:",
+    "eslint-config-prettier": "catalog:",
+    "eslint-import-resolver-typescript": "catalog:",
+    "eslint-plugin-import": "catalog:",
+    "globals": "catalog:",
+    "prettier": "catalog:",
+    "typescript-eslint": "catalog:"
   },
   "keywords": [
     "ast"

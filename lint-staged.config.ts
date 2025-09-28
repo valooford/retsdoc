@@ -4,6 +4,7 @@ import type { Configuration } from 'lint-staged'
 export default {
   '!(packages)/**/*': [
     `prettier --write --ignore-unknown`, // --experimental-cli causes trailingComma in jsonc
+    `eslint --cache --max-warnings 0 --no-warn-ignored`,
   ],
   'packages/**/*': (files) => {
     const [f] = files
@@ -16,6 +17,7 @@ export default {
 
     return [
       `prettier --write --ignore-unknown${opt(` --config-path packages/${pkg}/prettier.config.js`)} ${filesStr}`, // --experimental-cli causes trailingComma in jsonc
+      `eslint --cache --max-warnings 0 --no-warn-ignored${opt(` -c packages/${pkg}/eslint.config.ts`)} ${filesStr}`,
     ]
   },
 } as Configuration
