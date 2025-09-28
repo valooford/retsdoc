@@ -1,0 +1,8 @@
+// hint: include those to your settings.json
+{
+  "git.followTagsWhenSync": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "npm.exclude": ["**/packages/**"],
+  "npm.scriptExplorerExclude": ["prepare"]
+}

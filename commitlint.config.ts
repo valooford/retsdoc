@@ -1,5 +1,6 @@
-import type { UserConfig } from "@commitlint/types";
-// import { RuleConfigSeverity } from "@commitlint/types"; 
+import type { UserConfig } from '@commitlint/types'
+
+// import { RuleConfigSeverity } from "@commitlint/types";
 
 const Configuration: UserConfig = {
   /*
@@ -7,7 +8,7 @@ const Configuration: UserConfig = {
    * Referenced packages must be installed
    * @see {@link https://www.conventionalcommits.org/en/v1.0.0/}
    */
-  extends: ["@commitlint/config-conventional"],
+  extends: ['@commitlint/config-conventional'],
   /*
    * Resolve and load conventional-changelog-atom from node_modules.
    * Referenced packages must be installed
@@ -23,7 +24,7 @@ const Configuration: UserConfig = {
    */
   rules: {
     // "type-enum": [2, "always", ["foo"]],
-    // "type-enum": [RuleConfigSeverity.Error, "always", ["foo"]], 
+    // "type-enum": [RuleConfigSeverity.Error, "always", ["foo"]],
   },
   /*
    * Array of functions that return true if commitlint should ignore the given message.
@@ -46,7 +47,7 @@ const Configuration: UserConfig = {
    * Custom URL to show upon failure
    */
   helpUrl:
-    "https://github.com/conventional-changelog/commitlint/#what-is-commitlint",
+    'https://github.com/conventional-changelog/commitlint/#what-is-commitlint',
   /*
    * Custom prompt configs
    */
@@ -58,6 +59,6 @@ const Configuration: UserConfig = {
       // },
     },
   },
-};
+}
 
-export default Configuration;
+export default Configuration

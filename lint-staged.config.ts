@@ -2,7 +2,9 @@ import type { Configuration } from 'lint-staged'
 
 // https://github.com/lint-staged/lint-staged?tab=readme-ov-file#using-js-configuration-files
 export default {
-  '!(packages)/**/*': ['echo LINT-STAGED'],
+  '!(packages)/**/*': [
+    `prettier --write --ignore-unknown`, // --experimental-cli causes trailingComma in jsonc
+  ],
   'packages/**/*': (files) => {
     const [f] = files
     if (!f) return []
@@ -12,6 +14,8 @@ export default {
     const filesStr = files.map((f) => `"${f}"`).join(' ')
     const opt = (flag: string) => (pkg ? flag : '') // every package
 
-    return []
+    return [
+      `prettier --write --ignore-unknown${opt(` --config-path packages/${pkg}/prettier.config.js`)} ${filesStr}`, // --experimental-cli causes trailingComma in jsonc
+    ]
   },
 } as Configuration

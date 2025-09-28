@@ -1,3 +1,7 @@
 node_modules
-.nx/cache
-PRIVATE.md
+/.*/**/*
+!/.husky/
+!/.vscode/extensions.json
+!/.vscode/_*.jsonc
+*.md
+!README.md

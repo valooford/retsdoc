@@ -1,0 +1,24 @@
+{
+  "name": "tsdmast",
+  "version": "0.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "format": "prettier . --write"
+  },
+  "author": "valooford",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/valooford/retsdoc.git"
+  },
+  "funding": "https://github.com/valooford/valooford#support",
+  "homepage": "https://github.com/valooford/retsdoc/tree/main/packages/tsdmast#readme",
+  "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "catalog:",
+    "prettier": "catalog:"
+  },
+  "keywords": [
+    "ast"
+  ]
+}
