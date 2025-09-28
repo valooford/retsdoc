@@ -1,0 +1,7 @@
+{
+  "$schema": "../../node_modules/.pnpm/nx@21.5.3/node_modules/nx/schemas/project-schema.json",
+  "targets": {
+    // https://nx.dev/technologies/typescript/introduction#build
+    "build:workspace": {}
+  }
+}

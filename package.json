@@ -3,6 +3,9 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "dev:win": "lerna watch -- lerna run build --scope=%LERNA_PACKAGE_NAME% --include-dependents",
+    "dev:nix": "lerna watch -- lerna run build --scope=\\$LERNA_PACKAGE_NAME --include-dependents",
+    "build": "lerna run build:workspace",
     "lint": "pnpm lint:root && lerna run lint --stream",
     "lint:root": "eslint . --cache",
     "format:root": "prettier . !packages --write",

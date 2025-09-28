@@ -1,5 +1,19 @@
 {
+  "$schema": "node_modules/.pnpm/nx@21.5.3/node_modules/nx/schemas/nx-schema.json",
   "targetDefaults": {
+    "build:workspace": {
+      "cache": true,
+      // https://nx.dev/reference/core-api/nx/executors/run-commands
+      // pnpm nx build <pkg>
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "{projectRoot}",
+        "command": "pnpm run build",
+        "args": ["--out-dir", "../../dist/{projectRoot}"]
+      }
+      // https://nx.dev/reference/project-configuration#outputs
+      // "outputs": ["{workspaceRoot}/dist/{projectRoot}"]
+    },
     "lint": {
       "cache": true,
       "outputs": ["{projectRoot}/.eslintcache"]

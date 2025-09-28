@@ -4,5 +4,16 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "npm.exclude": ["**/packages/**"],
-  "npm.scriptExplorerExclude": ["prepare", ":root$"]
+  "npm.scriptExplorerExclude": [
+    "prepare",
+    ":root$",
+    /* Windows */
+    ":nix"
+    /* macOS or Linux */
+    // ":win"
+  ],
+  "files.associations": {
+    /* comments are allowed in these files */
+    "{project,nx}.json": "jsonc"
+  }
 }
