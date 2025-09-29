@@ -1,7 +1,7 @@
 {
   "name": "tsdmast",
   "version": "0.1.9",
-  "description": "",
+  "description": "TypeScript Doc Model Abstract Syntax Tree format. Cornerstone of the retsdoc ecosystem of plugins (unifiedjs)",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -45,6 +45,21 @@
     "typescript-eslint": "catalog:"
   },
   "keywords": [
-    "ast"
+    "ast",
+    "unified",
+    "unist",
+    "TSDoc",
+    "api-extractor-model",
+    "API",
+    "rush",
+    "typescript",
+    "dts",
+    ".d.ts",
+    "declaration",
+    "abstract",
+    "syntax",
+    "tree",
+    "retsdoc",
+    "tsdmast"
   ]
 }
