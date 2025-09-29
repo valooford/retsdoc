@@ -1,6 +1,7 @@
 node_modules
 /.*/**/*
-!/.husky/
+!/.github/**/*
+!/.husky/**/*
 !/.vscode/extensions.json
 !/.vscode/_*.jsonc
 dist/
