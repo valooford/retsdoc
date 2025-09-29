@@ -7,7 +7,7 @@
       "directory": "{workspaceRoot}/dist/{projectRoot}",
       "assets": [
         {
-          "from": "config/assets/.npmignore",
+          "from": "../../config/assets/.npmignore",
           "to": "./"
         },
         {
