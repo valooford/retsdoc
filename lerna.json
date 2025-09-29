@@ -11,7 +11,8 @@
           "to": "./"
         },
         {
-          "from": "{projectRoot}/dist/**/!(*.js|*.d.ts|*.map)",
+          // "from": "dist/**/!(*.js|*.d.ts|*.map)",
+          "from": "dist/package.json",
           "to": "./"
         }
       ]
