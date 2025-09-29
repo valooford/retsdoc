@@ -10,6 +10,7 @@
     "lint:root": "eslint . --cache",
     "format:root": "prettier . !packages --write",
     "git-cz": "cz",
+    "version:bump": "lerna version --conventional-commits",
     "prepare": "husky"
   },
   "devDependencies": {
