@@ -9,6 +9,10 @@
         {
           "from": "../../config/assets/.npmignore",
           "to": "./"
+        },
+        {
+          "from": "{projectRoot}/dist/**/!(*.js|*.d.ts|*.map)",
+          "to": "./"
         }
       ]
     }
