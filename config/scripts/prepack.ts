@@ -91,6 +91,8 @@ async function prepack() {
   delete packageData.engines
   delete packageData.scripts
   delete packageData.devDependencies
+  delete packageData.lerna
+  delete packageData.gitHead
   const makeDistRelative = (p: string) => `./${path.posix.relative('dist', p)}`
   packageData.main &&= makeDistRelative(packageData.main)
   packageData.types &&= makeDistRelative(packageData.types)
@@ -164,6 +166,8 @@ type PackageJson = Partial<{
   }
   scripts: Record<string, string>
   devDependencies: Record<string, string>
+  lerna: any
+  gitHead: any
 }>
 
 // exports schema
