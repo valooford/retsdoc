@@ -7,8 +7,8 @@
       "directory": "{workspaceRoot}/dist/{projectRoot}",
       "assets": [
         {
-          "from": "config/.package.npmignore",
-          "to": ".npmignore"
+          "from": "config/assets/.npmignore",
+          "to": "./"
         },
         {
           "from": "dist/**/!(*.js|*.d.ts|*.map)",
