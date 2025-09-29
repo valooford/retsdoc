@@ -1,9 +1,8 @@
 {
   "$schema": "node_modules/lerna/schemas/lerna-schema.json",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "npmClient": "pnpm",
   "command": {
-    // https://lerna.js.org/docs/concepts/configuring-published-files
     "publish": {
       "directory": "{workspaceRoot}/dist/{projectRoot}",
       "assets": [
