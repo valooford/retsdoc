@@ -7,3 +7,4 @@ dist/
 .eslintcache
 *.md
 !README.md
+*.tgz

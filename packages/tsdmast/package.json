@@ -15,7 +15,9 @@
     "dev": "tsdown --watch",
     "build": "tsdown",
     "lint": "eslint . --cache",
-    "format": "prettier . --write"
+    "format": "prettier . --write",
+    "prepack": "node --experimental-strip-types ../../config/scripts/prepack.ts",
+    "pack": "pnpm prepack && cd dist && pnpm pack --pack-destination .."
   },
   "author": "valooford",
   "license": "MIT",

@@ -77,10 +77,10 @@ export default defineConfig([
     plugins: { json },
     language: 'json/json',
     extends: ['json/recommended'],
-    ignores: ['**/{tsconfig{,.node},nx,project}.json'],
+    ignores: ['**/{tsconfig{,.node},lerna,nx,project}.json'],
   },
   {
-    files: ['**/*.jsonc', '**/{nx,project}.json'],
+    files: ['**/*.jsonc', '**/{lerna,nx,project}.json'],
     plugins: { json },
     language: 'json/jsonc',
     extends: ['json/recommended'],

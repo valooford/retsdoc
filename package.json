@@ -28,6 +28,7 @@
     "eslint-import-resolver-typescript": "catalog:",
     "eslint-plugin-import": "catalog:",
     "globals": "catalog:",
+    "globby": "^15.0.0",
     "husky": "^9.1.7",
     "lerna": "^9.0.0",
     "lint-staged": "^16.2.1",
