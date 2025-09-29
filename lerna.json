@@ -11,7 +11,8 @@
           "to": "./"
         },
         {
-          "from": "dist/package.json",
+          // "from": "dist/**/!(*.js|*.d.ts|*.map)",
+          "from": "dist/**/*",
           "to": "./"
         }
       ]
