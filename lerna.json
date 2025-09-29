@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/lerna/schemas/lerna-schema.json",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "npmClient": "pnpm",
   "command": {
     "publish": {
@@ -10,10 +10,6 @@
           "from": "../../config/assets/.npmignore",
           "to": "./"
         }
-        // {
-        //   "from": "dist/**/!(*.js|*.d.ts|*.map)",
-        //   "to": "./"
-        // }
       ]
     }
   }
