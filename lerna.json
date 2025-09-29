@@ -9,11 +9,11 @@
         {
           "from": "../../config/assets/.npmignore",
           "to": "./"
-        },
-        {
-          "from": "dist/**/!(*.js|*.d.ts|*.map)",
-          "to": "./"
         }
+        // {
+        //   "from": "dist/**/!(*.js|*.d.ts|*.map)",
+        //   "to": "./"
+        // }
       ]
     }
   }
