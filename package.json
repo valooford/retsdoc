@@ -11,7 +11,7 @@
     "format:root": "prettier . !packages --write",
     "git-cz": "cz",
     "version:bump": "lerna version --conventional-commits",
-    "publish:npm": "lerna run build && lerna run prepack && lerna publish from-git",
+    "publish:npm": "pnpm run build && lerna run prepack && lerna publish from-git",
     "prepare": "husky"
   },
   "devDependencies": {
