@@ -8,7 +8,13 @@ const Configuration: UserConfig = {
    * Referenced packages must be installed
    * @see {@link https://www.conventionalcommits.org/en/v1.0.0/}
    */
-  extends: ['@commitlint/config-conventional'],
+  // extends: ['@commitlint/config-conventional'],
+  /*
+   * Resolve and load @commitlint/config-angular from node_modules.
+   * Referenced packages must be installed
+   * @see {@link https://github.com/angular/angular/blob/main/CONTRIBUTING.md#commit}
+   */
+  extends: ['@commitlint/config-angular', '@commitlint/config-pnpm-scopes'],
   /*
    * Resolve and load conventional-changelog-atom from node_modules.
    * Referenced packages must be installed
@@ -20,7 +26,7 @@ const Configuration: UserConfig = {
    */
   // formatter: "@commitlint/format",
   /*
-   * Any rules defined here will override rules from @commitlint/config-conventional
+   * Any rules defined here will override rules from @commitlint/config-angular
    */
   rules: {
     // "type-enum": [2, "always", ["foo"]],
