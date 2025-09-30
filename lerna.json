@@ -7,6 +7,10 @@
       "directory": "{workspaceRoot}/dist/{projectRoot}",
       "assets": [
         {
+          "from": "../../LICENSE",
+          "to": "./"
+        },
+        {
           "from": "../../config/assets/.npmignore",
           "to": "./"
         },
