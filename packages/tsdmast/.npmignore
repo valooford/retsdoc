@@ -3,3 +3,5 @@
 
 # Allow dist folder
 !dist/**/*[!.map]
+
+!header.svg

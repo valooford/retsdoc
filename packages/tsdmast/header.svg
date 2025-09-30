@@ -1,0 +1,75 @@
+<svg fill="none" viewBox="0 0 550 160" width="550" height="160" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        :root {
+          --color-main: #111;
+          --color-ts: #3178c6;
+          --color-rush: #c95328;
+
+          color: var(--color-main);
+          font-size: 24px;
+          line-height: 48px;
+        }
+        /* https://gist.github.com/roachhd/393f0df3193f1102383a */
+        header {
+          margin-top: -1.5em;
+          padding: 1em;
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", sans-serif;
+          
+          background-color: #fff; /* there is no dark theme on npmjs.com so background is required */
+        }
+        h1, h2, h3, h4, h5, h6 {
+          font-weight: 600;
+        }
+        h1 { font-size: 4em; }
+
+        /* -------- */
+        
+        .container {
+          display: flex;
+          justify-content: center;
+        }
+        .container > * {
+          display: inline-block;
+        }
+
+        /* https://www.typescriptlang.org/branding/ */
+        .ts {
+          position: relative;
+        }
+        .ts-text {
+          position: relative;
+          color: #fff;
+          font-size: 0.7em;
+          z-index: 1;
+        }
+        .ts-bg {
+          position: absolute;
+          bottom: -25%;
+          right: -10%;
+          width: 130%;
+          padding-bottom: 130%;
+          background-color: var(--color-ts);
+          border-radius: 0.1em;
+        }
+
+        .dm {
+          margin-left: 0.1em;
+          color: var(--color-rush);
+        }
+      </style>
+
+      <header>
+        <h1 class="container">
+          <span class="ts">
+            <span class="ts-text">TS</span>
+            <span class="ts-bg"></span>
+          </span>
+          <span class="dm">dm</span>
+          <span class="ast">ast</span>
+        </h1>
+      </header>
+    </div>
+  </foreignObject>
+</svg>

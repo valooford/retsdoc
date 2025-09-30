@@ -1,7 +1,7 @@
 {
   "name": "tsdmast",
   "version": "0.1.9",
-  "description": "TypeScript Doc Model Abstract Syntax Tree format. Cornerstone of the retsdoc ecosystem of plugins (unifiedjs)",
+  "description": "TypeScript Doc Model Abstract Syntax Tree format. The cornerstone of the `retsdoc` ecosystem of plugins (unifiedjs)",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
